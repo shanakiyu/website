@@ -23,14 +23,14 @@ const projectsData = {
   "interactivity-digital-museums": {
     title: "Observing Interactivity in Digital Museums",
     desc: "Observing Interactivity in Museums is a sociological field study conducted at the Grand Palais Immersif during the exhibition PIXELS, dedicated to digital artist Miguel Chevalier. \nWorking in a group, we investigated how interactive and immersive dispositifs transform visitors’ behavior and engagement within the exhibition space. Combining quantitative data collection with qualitative observation, the project analyzes how visitors move, interact with artworks, use digital interfaces, and relate to one another. \nRather than focusing on the artworks themselves, the study examines the shifting role of the visitor — from passive observer to active participant — and what this reveals about the evolution of contemporary museum practices. \n#Sociology #FieldObservation #DataAnalysis #MuseumStudies #DigitalArt",
-    link: "../docs/RapportObservation_NinaVivierBarte.pdf", // Remplace par ton lien
+    link: "docs/RapportObservation_NinaVivierBarte.pdf", // Remplace par ton lien
     ready: true,
     lang: "fr",
   },
   "kanak-heritage": {
     title: "Visualizing Dispersed Kanak Heritage",
     desc: "Visualizing Dispersed Kanak Heritage is a critical data visualization project developed in response to a fictional commission from the Musée du Quai Branly – Jacques Chirac. \nBased on the Inventaire du Patrimoine Kanak Dispersé, the project examines how colonial logics of collection and documentation shape what can — and cannot — be visualized. Rather than attempting to “repair” missing data, the visualization makes absences visible. A multipartite network connects places of conservation, types of donors, object categories, and creators, deliberately concentrating undocumented authorship into a single “Anonymous” node. Inspired by critical data visualization theories, the project treats visualization not as a neutral tool, but as an interpretative and political act that exposes asymmetries, silences, and power relations embedded in cultural datasets. \n#DataVisualization #CriticalDesign #CriticalData #PostcolonialData",
-    link: "../docs/Projet_VisualisationDonnées_NinaVivierBarte.pdf", // Remplace par ton lien
+    link: "docs/Projet_VisualisationDonnées_NinaVivierBarte.pdf", // Remplace par ton lien
     ready: true,
     lang: "fr",
   },
@@ -62,7 +62,7 @@ const projectsData = {
   "clotilde-opening": {
     title: "Conceiving A Theme Song",
     desc: "Collaborative project developed within a small team of four for the creation of a YouTube channel opening. \nMy role focused on writing the lyrics, adapting them closely to the creator’s desired image, tone, and public persona. The lyrics were then performed by the creator herself, ensuring coherence between voice, text, and musical identity. The musical production is completed, while the 2D animation is still in progress, as it requires a precise frame-by-frame synchronization with the soundtrack. \nThis project reflects my ability to respond to a creative brief and adapt writing to a client-driven context. \n#LyricsWriting #CreativeCollaboration #ClientWork #MusicAndText #YouTubeCreation #CreativeProcess #WorkInProgress",
-    link: "../docs/cloti.wav",
+    link: "docs/cloti.wav",
     ready: true,
     lang: "en",
   },
@@ -76,14 +76,14 @@ const projectsData = {
   "eurovision-data": {
     title: "Eurovision Song Contest: Quantitative Analysis",
     desc: "This project examines the evolution of political and social themes in the Eurovision Song Contest using quantitative methods. \nBased on a dataset of 605 songs (2000–2024) scraped from Wikipedia, each entry was manually annotated according to its thematic content, then grouped into progressive and non-progressive categories. Through statistical tests and logistic regression, the analysis shows a clear increase in progressive themes over time, while finding no significant correlation between these themes and final rankings. \nThe project highlights the gap between cultural visibility and competitive success, and discusses the limits of correlational analysis in cultural data. \n#Eurovision #CulturalData #MediaStudies #QuantitativeAnalysis #MusicAndPolitics #DataScience #CriticalResearch #SociologyOfCulture",
-    link: "../docs/Eurovision_Data_Analyse.pdf", // Remplace par ton lien
+    link: "docs/Eurovision_Data_Analyse.pdf", // Remplace par ton lien
     ready: true,
     lang: "en",
   },
   "numerical-system": {
     title: "Hypothetical Numerical System",
     desc: "This project explores the creation of an original numerical system inspired by the comparative study of historical counting systems, based on Stephen Chrisomalis’ work on numerical notation. \nInstead of written symbols, the system uses the human body as its interface. Numbers are encoded through rings worn on fingers and phalanges, turning the hands into tools for calculation, memory, and communication. Arithmetic operations rely on symmetry, spatial alignment, and gesture rather than linear notation. By avoiding a single canonical way of writing numbers, the system emphasizes plurality, embodiment, and reversibility. \nIt questions how numerical systems structure value, authority, and social order, and proposes an alternative, physically grounded model of computation. \n#HypotheticalNumericalSystem #EmbodiedComputation #SpeculativeDesign #AlternativeMath #BodyAsInterface #ResearchProject #HistoricalCountingSystems #ChrisomalisInspired #GesturalArithmetic",
-    link: "../docs/Numerical_System.pdf", // Remplace par ton lien
+    link: "docs/Numerical_System.pdf", // Remplace par ton lien
     ready: true,
     lang: "fr",
   },
