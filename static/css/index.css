@@ -11,24 +11,14 @@ body {
 }
 
 #desktop-frame {
-  /* 1. Dimensions : Prend tout l'écran */
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden; /* Empêche de scroller sur les côtés */
-
-  /* 2. L'image de fond (Le chemin correct) */
+  overflow: hidden;
   background-image: url("../images/background.png");
-  
-  /* 3. Comment l'image s'affiche */
-  /* "cover" va remplir tout l'écran sans laisser de blanc */
-  /* Si tu préfères que ça s'étire (déforme un peu), mets "100% 100%" à la place de "cover" */
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
-
-  /* 4. IMPORTANT : ON A SUPPRIMÉ "display: flex" ICI */
-  /* C'est ça qui cassait tes icônes */
 }
 
 #screen {
@@ -235,6 +225,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   border-top: 1px solid #fff;
+  z-index: 1000;
 }
 
 #clock {
