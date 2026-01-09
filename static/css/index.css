@@ -132,13 +132,13 @@ body {
 #sticker-aboutme {
   width: 12%;
   top: 73%;
-  left: 17%;
+  left: 18%;
   transform: rotate(-17deg);
 }
 
 #sticker-ninastation {
   width: 19%;
-  bottom: 10%;
+  bottom: 9%;
   right: 40%;
   transform: rotate(-15deg);
 }
@@ -146,7 +146,7 @@ body {
 #sticker-contact {
   width: 12%;
   top: 72%;
-  right: 19%;
+  right: 18%;
   transform: rotate(-10deg);
 }
 
