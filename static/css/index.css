@@ -2,7 +2,7 @@
 body {
   background-color: #00070b;
   margin: 0;
-  display: flex;
+  display: flex;       /* C'est ça qui centrait ton cadre */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -12,13 +12,21 @@ body {
 
 #desktop-frame {
   position: relative;
+  max-width: 105%;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  
+  /* CHEMIN CORRIGÉ POUR GITHUB (../) */
   background-image: url("../images/background.png");
-  background-size: 100% 100%;
-  background-position: center;
+  
+  /* C'est ce réglage "contain" qui gardait tes proportions étagères/icônes */
+  background-size: contain; 
   background-repeat: no-repeat;
+  background-position: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #screen {
@@ -35,12 +43,12 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  position: relative; /* Permet le placement libre des icônes internes */
+  position: relative; 
 }
 
 /* Styles communs des Icônes du Bureau */
 .icon-container {
-  position: absolute; /* Placement libre par ID */
+  position: absolute;
   width: 70px;
   text-align: center;
   cursor: pointer;
@@ -71,109 +79,38 @@ body {
 }
 
 /* --- RÉGLAGES INDIVIDUELS DES ICÔNES DU BUREAU --- */
-/* Modifie Top/Left et Width pour chaque icône ici */
-#icon-minecraft {
-  top: 5%;
-  left: 5%;
-  width: 70px;
-}
-#icon-podcast {
-  top: 5%;
-  left: 20%;
-}
-#icon-film {
-  top: 5%;
-  left: 35%;
-}
-#icon-museum {
-  top: 5%;
-  left: 50%;
-}
-#icon-kanak {
-  top: 25%;
-  left: 5%;
-}
-#icon-ads {
-  top: 25%;
-  left: 20%;
-}
-#icon-world {
-  top: 27%;
-  left: 35%;
-}
-#icon-crystals {
-  top: 25%;
-  left: 50%;
-}
-#icon-writing {
-  top: 45%;
-  left: 5%;
-}
-#icon-music {
-  top: 45%;
-  left: 20%;
-}
-#icon-vn {
-  top: 45%;
-  left: 35%;
-}
-#icon-eurovision {
-  top: 47%;
-  left: 50%;
-}
-#icon-numbers {
-  top: 70%;
-  left: 5%;
-}
+#icon-minecraft { top: 5%; left: 5%; width: 70px; }
+#icon-podcast { top: 5%; left: 20%; }
+#icon-film { top: 5%; left: 35%; }
+#icon-museum { top: 5%; left: 50%; }
+#icon-kanak { top: 25%; left: 5%; }
+#icon-ads { top: 25%; left: 20%; }
+#icon-world { top: 27%; left: 35%; }
+#icon-crystals { top: 25%; left: 50%; }
+#icon-writing { top: 45%; left: 5%; }
+#icon-music { top: 45%; left: 20%; }
+#icon-vn { top: 45%; left: 35%; }
+#icon-eurovision { top: 47%; left: 50%; }
+#icon-numbers { top: 70%; left: 5%; }
+#icon-backstage { top: 70%; left: 20%; }
 
-#icon-backstage {
-  top: 70%;
-  left: 20%;
-}
+/* Tailles Images */
+#icon-minecraft img { width: 100px; }
+#icon-podcast img { width: 70px; }
+#icon-eurovision img { width: 70px; }
+#icon-film img { width: 60px; }
+#icon-museum img { width: 70px; }
+#icon-kanak img { width: 80px; }
+#icon-ads img { width: 90px; }
+#icon-world img { width: 60px; }
+#icon-crystals img { width: 70px; }
+#icon-writing img { width: 90px; }
+#icon-music img { width: 90px; }
+#icon-vn img { width: 90px; }
+#icon-numbers img { width: 80px; }
+#icon-backstage img { width: 90px; }
 
-#icon-minecraft img {
-  width: 100px;
-}
-#icon-podcast img {
-  width: 70px;
-}
-#icon-eurovision img {
-  width: 70px;
-}
-#icon-film img {
-  width: 60px;
-}
-#icon-museum img {
-  width: 70px;
-}
-#icon-kanak img {
-  width: 80px;
-}
-#icon-ads img {
-  width: 90px;
-}
-#icon-world img {
-  width: 60px;
-}
-#icon-crystals img {
-  width: 70px;
-}
-#icon-writing img {
-  width: 90px;
-}
-#icon-music img {
-  width: 90px;
-}
-#icon-vn img {
-  width: 90px;
-}
-#icon-numbers img {
-  width: 80px;
-}
-#icon-backstage img {
-  width: 90px;
-}
-/* --- STYLES DES STICKERS (HORS ÉCRAN) --- */
+/* --- STYLES DES STICKERS --- */
 .sticker-icon {
   position: absolute;
   cursor: pointer;
@@ -191,7 +128,7 @@ body {
   transform: scale(1.1) rotate(2deg);
 }
 
-/* --- RÉGLAGES INDIVIDUELS DES STICKERS --- */
+/* Placements Stickers */
 #sticker-aboutme {
   width: 12%;
   top: 73%;
@@ -219,92 +156,57 @@ body {
   bottom: 0;
   width: 100%;
   height: 20px;
-  background-image: url("../images/footer.jpg");
+  background-image: url("../images/footer.jpg"); /* Chemin corrigé */
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   border-top: 1px solid #fff;
-  z-index: 1000;
+  z-index: 1000; /* Important pour qu'elle reste visible */
 }
 
 #clock {
   background-color: transparent;
   border: 1px solid transparent;
-  border-right: 1px solid transparent;
-  border-bottom: 1px solid transparent;
   padding: 2px 6px;
   margin-right: 5px;
   font-size: 0.75em;
   color: white;
 }
 
-/* --- RÉGLAGE ÉTOILES "ÉPINGLÉES" SUR LE BORD --- */
-
-.sticker-icon::before,
-.sticker-icon::after {
+/* --- RÉGLAGE ÉTOILES --- */
+.sticker-icon::before, .sticker-icon::after {
   content: "✦";
   position: absolute;
   color: #ff1493;
-  font-size: 16px; /* Légèrement réduit pour plus de finesse */
+  font-size: 16px;
   pointer-events: none;
-  z-index: 5; /* Priorité maximale pour être AU-DESSUS du sticker */
+  z-index: 5;
   text-shadow: 0 0 5px rgba(255, 105, 180, 0.8);
 }
 
-/* Étoiles en haut à gauche : on entre de 5px à l'intérieur de l'image */
 .sticker-icon::before {
-  top: 10px; /* Valeur positive = descend à l'intérieur */
-  left: 10px; /* Valeur positive = entre à l'intérieur */
-  /* La deuxième étoile est juste à côté, chevauchant le bord */
+  top: 10px; left: 10px;
   text-shadow: -8px 8px 3px #ff69b4;
   animation: shimmer-inner 2s infinite ease-in-out;
 }
 
-/* Étoile en bas à droite : on entre de 5px aussi */
 .sticker-icon::after {
-  bottom: 10px;
-  right: 10px;
+  bottom: 10px; right: 10px;
   font-size: 13px;
   animation: shimmer-inner 2.5s infinite ease-in-out reverse;
 }
 
-/* Animation de scintillement sur place (sans bouger du bord) */
 @keyframes shimmer-inner {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
 }
 
-.sticker-icon:hover::before,
-.sticker-icon:hover::after {
-  color: #fff;
-  text-shadow: 0 0 10px #ff1493;
+.sticker-icon:hover::before, .sticker-icon:hover::after {
+  color: #fff; text-shadow: 0 0 10px #ff1493;
 }
 
-/* RÉGLAGES SUR-MESURE POUR LE STICKER NINA STATION */
-
-/* Rapprochement des étoiles du haut pour ce sticker précis */
-#sticker-ninastation::before {
-  top: 3px; /* Ajuste ici : plus le chiffre est petit (ou négatif), plus c'est près */
-  left: 34px; /* Idem */
-  text-shadow: -4px 5px 3px #ff69b4; /* Rapproche aussi la deuxième étoile du groupe */
-}
-
-/* Rapprochement des étoiles du bas pour ce sticker précis */
-#sticker-ninastation::after {
-  bottom: 25px; /* Ajuste ici */
-  right: 10px; /* Idem */
-}
-
-/* Si tu veux aussi changer la taille des étoiles juste pour celui-là */
-#sticker-ninastation::before,
-#sticker-ninastation::after {
-  font-size: 15px;
-}
+/* Etoiles Nina Station */
+#sticker-ninastation::before { top: 3px; left: 34px; text-shadow: -4px 5px 3px #ff69b4; }
+#sticker-ninastation::after { bottom: 25px; right: 10px; }
+#sticker-ninastation::before, #sticker-ninastation::after { font-size: 15px; }
