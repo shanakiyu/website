@@ -16,7 +16,7 @@ const projectsData = {
   "what-fades-away": {
     title: "What Fades Away",
     desc: "What Fades Away is a poetic animated short film project inspired by A Painful Case from James Joyce’s Dubliners. \nDeveloped in a group of three, the project proposes a free adaptation that translates Joyce’s psychological realism into a sensory cinematic language. Set in a contemporary, abstracted Dublin, the film follows a solitary man whose emotionally restrained life is briefly illuminated by an intimate encounter, before returning to silence and loss. Rather than retelling the story, the project focuses on perception: sound, light, and rhythm replace inner monologue to express emotional paralysis, epiphany, and belated awareness. \nI was mainly involved in the interpretative analysis, narrative structure, and artistic intention of the project. \n#FilmProject #Adaptation #Storytelling #Literature #Cinema",
-    link: "../docs/Ce_qui_s'éteint.pdf", // Remplace par ton lien
+    link: "docs/Ce_qui_s'éteint.pdf", // Remplace par ton lien
     ready: true,
     lang: "fr",
   },
