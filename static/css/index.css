@@ -33,7 +33,7 @@ body {
   position: absolute;
   top: 14.4%;
   left: 25%;
-  width: 50.2%;
+  width: 49%;
   height: 59.2%;
   overflow: hidden;
 }
@@ -146,7 +146,7 @@ body {
 #sticker-contact {
   width: 12%;
   top: 72%;
-  right: 18%;
+  right: 20%;
   transform: rotate(-10deg);
 }
 
