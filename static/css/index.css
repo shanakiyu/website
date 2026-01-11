@@ -224,3 +224,98 @@ body {
 #sticker-ninastation::before { top: 3px; left: 34px; text-shadow: -4px 5px 3px #ff69b4; }
 #sticker-ninastation::after { bottom: 25px; right: 10px; }
 #sticker-ninastation::before, #sticker-ninastation::after { font-size: 15px; }
+
+
+/* --- POPUP BETA STYLE WINDOWS 98 --- */
+
+/* Le fond gris qui grise l'arrière-plan */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent */
+  display: flex; /* Pour centrer le pop-up */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Toujours au-dessus de tout le reste */
+}
+
+/* La fenêtre elle-même */
+.win98-popup {
+  width: 420px;
+  max-width: 90%;
+  background-color: #c0c0c0; /* Gris Windows */
+  border: 2px solid;
+  border-color: #dfdfdf #000000 #000000 #dfdfdf; /* Effet 3D sortant */
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* La barre bleue en haut */
+.popup-header {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  padding: 4px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* Le petit bouton X */
+.popup-close-btn {
+  background: #c0c0c0;
+  border: 1px outset #fff;
+  width: 20px;
+  height: 18px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  cursor: pointer;
+}
+
+/* Le contenu (Icone + Texte) */
+.popup-body {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.popup-icon {
+  font-size: 35px;
+}
+
+.popup-text p {
+  margin: 0 0 10px 0;
+  font-size: 0.9em;
+  color: #000;
+  line-height: 1.4;
+}
+
+/* Le bouton OK en bas */
+.popup-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.win98-btn-ok {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #fff #000 #000 #fff; /* Effet 3D bouton */
+  padding: 5px 30px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.win98-btn-ok:active {
+  border-color: #000 #fff #fff #000; /* Effet enfoncé au clic */
+  transform: translate(1px, 1px);
+}
