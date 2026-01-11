@@ -1,3 +1,12 @@
+// Fonction pour fermer le Pop-up Beta
+function closePopup() {
+  const popup = document.getElementById("beta-popup");
+  if (popup) {
+    popup.style.display = "none";
+  }
+}
+
+
 // Fonction pour gérer l'ouverture/fermeture d'une "fenêtre"
 function openWindow(projectId, title) {
   // ... (votre fonction openWindow) ...
