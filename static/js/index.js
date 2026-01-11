@@ -1,4 +1,4 @@
-// Fonction pour fermer le Pop-up Beta
+
 function closePopup() {
   const popup = document.getElementById("beta-popup");
   if (popup) {
@@ -6,18 +6,34 @@ function closePopup() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  const popup = document.getElementById("beta-popup");
+  
+  
+  if (sessionStorage.getItem("popupSeen") === "true") {
+    if (popup) {
+      popup.style.display = "none";
+    }
+  }
+});
 
-// Fonction pour gérer l'ouverture/fermeture d'une "fenêtre"
+function closePopup() {
+  const popup = document.getElementById("beta-popup");
+  if (popup) {
+    popup.style.display = "none";
+    sessionStorage.setItem("popupSeen", "true");
+  }
+}
+
 function openWindow(projectId, title) {
-  // ... (votre fonction openWindow) ...
-  // Le code pour créer et insérer la fenêtre modale reste inchangé.
+ 
 }
 
 function closeWindow(projectId) {
-  // ... (votre fonction closeWindow) ...
+
 }
 
-// Fonction pour afficher l'heure
+
 function updateClock() {
   const clockElement = document.getElementById("clock");
   if (clockElement) {
@@ -28,11 +44,8 @@ function updateClock() {
   }
 }
 
-// ----------------------------------------------------
-// Événements d'écoute
-// ----------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Gérer les clics sur les icônes
+
   const projectIcon = document.getElementById("project1");
   if (projectIcon) {
     projectIcon.addEventListener("click", () => {
@@ -40,9 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 2. Mise à jour de l'horloge
   updateClock(); // Appel initial
-  setInterval(updateClock, 60000); // Mise à jour toutes les minutes (60000 ms)
+  setInterval(updateClock, 60000); 
 
-  // NOTE : L'écouteur du bouton Démarrer a été retiré.
 });
