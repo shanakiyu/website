@@ -1,32 +1,46 @@
 /* Styles de base */
 body {
-  background-color: #00070b;
+  background-color: #00070b; /* La couleur des bandes noires */
   margin: 0;
-  display: flex;       /* C'est ça qui centrait ton cadre */
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   font-family: Arial, sans-serif;
+
+  /* On utilise Flexbox pour centrer le cadre au milieu de l'écran */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #desktop-frame {
   position: relative;
-  max-width: 105%;
-  width: 100vw;
-  height: 100vh;
+
+  /* --- C'EST ICI LA MAGIE DU "FIX" --- */
+  /* 1. On verrouille la forme du cadre en 16/9 (format standard TV/Ordi) */
+  aspect-ratio: 16 / 9;
+
+  /* 2. On lui dit de prendre toute la largeur possible... */
+  width: 100%;
   
-  /* CHEMIN CORRIGÉ POUR GITHUB (../) */
+  /* 3. ...MAIS sans jamais dépasser la hauteur de l'écran */
+  max-height: 100vh;
+  
+  /* Si l'écran est très large (Ultrawide), on limite aussi la largeur pour pas que ça coupe en haut/bas */
+  max-width: 177.78vh; /* (16/9 * 100vh) - Astuce mathématique pour ne pas dépasser */
+
+  /* --- GESTION DU FOND --- */
   background-image: url("../images/background.png");
   
-  /* C'est ce réglage "contain" qui gardait tes proportions étagères/icônes */
-  background-size: contain; 
-  background-repeat: no-repeat;
+  /* Maintenant que le cadre est forcé en 16/9, on peut étirer l'image pour le remplir */
+  /* Comme le cadre et l'image ont le même ratio, ça ne déformera rien ! */
+  background-size: 100% 100%; 
   background-position: center;
+  background-repeat: no-repeat;
   
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* On retire le display:flex ici car tes icônes sont en position absolute */
+  box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Petite ombre pour l'esthétique */
 }
 
 #screen {
