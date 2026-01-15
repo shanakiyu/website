@@ -91,6 +91,7 @@ const projectsData = {
     title: "Backstage.",
     desc: "Direct access to the dedicated Backstage. website.",
     link: "https://backstage-app-bpf7.onrender.com/", 
+    ready: true,
     lang: "en",
   },
   "About Me": {
