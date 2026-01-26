@@ -87,7 +87,7 @@ const projectsData = {
     ready: true,
     lang: "fr",
   },
-  "Backstage.": {
+  "backstage": {
     title: "Backstage.",
     desc: "Direct access to the dedicated Backstage. website.",
     link: "https://backstage-app-bpf7.onrender.com/", 
