@@ -25,9 +25,10 @@ function closePopup() {
   }
 }
 
-function openWindow(projectId, title) {
- 
+function openWindow(projectId) {
+  window.location.href = `project.html?name=${projectId}`;
 }
+
 
 function closeWindow(projectId) {
 
