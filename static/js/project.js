@@ -55,7 +55,7 @@ const projectsData = {
   "creative-writing": {
     title: "Creative Writing Archive",
     desc: "This project brings together a year-long creative writing practice conducted in French, focused on form, materiality, and voice. \nThrough a series of constrained exercises, the work explores writing as a material process: texts inspired by color, sculpture, painting, and music; experiments in tone and genre; writing through everyday objects; and narrative voice shifts, including inhabiting other personas. \nThe project culminates in a short story written from the perspective of an inanimate object, pushing questions of subjectivity, agency, and perception. Rather than focusing only on narrative, this work approaches language as a material to work with — to shape, test, and transform. \n#CreativeWriting #Materiality #VoiceAndPerspective #WritingExperiments #LiteraryPractice",
-    link: "https://drive.google.com/ton-lien", 
+    link: "https://drive.google.com/drive/folders/1mAiOjWK3pny9dugcYEgIqqyk_BbT_X6C?usp=drive_link", 
     ready: true,
     lang: "fr",
   },
