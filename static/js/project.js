@@ -69,7 +69,7 @@ const projectsData = {
   "marie-antoinette-vn": {
     title: "Historical Visual Novel",
     desc: "One-week intensive project developed from concept to execution within a team of three. \nInspired by the romantic visual novels that shaped our childhood, we set out to create an original narrative experience rooted in historical fiction. Drawing from the French Revolution — a complex and fragile moment in French history — we explored a simple hypothesis: what if a single element had altered the course of events? We chose Marie Antoinette as our central character, precisely because of her enduring ambiguity and the myths surrounding her figure. \nThe project reimagines her life by revisiting key moments that shaped her historical trajectory and proposing alternative outcomes. The visual novel was fully developed using Ren’Py, combining visual design, narrative structure, dialogue writing, and music, to create an immersive, choice-driven experience. \n#VisualNovel #InteractiveFiction #AlternativeHistory #NarrativeDesign #RenPy #HistoricalFiction #CollaborativeProject",
-    link: "https://lien-vers-le-jeu.com", 
+    link: "https://drive.google.com/drive/folders/1V9Prgwx8fhwe5WuXaqwkSYPvkzitHNwD?usp=sharing", 
     ready: true,
     lang: "fr",
   },
