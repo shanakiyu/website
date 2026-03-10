@@ -37,8 +37,9 @@ const projectsData = {
   "advertising-car": {
     title: "Advertising the Self Through the Car",
     desc: "Advertising the Self Through the Car: Identity and Responsibility explores how automotive advertising reflects and shapes contemporary subjectivity. \nUsing a dataset of 8,938 commercials from 2014–2024, the project quantifies narrative registers — rational, emotional, moral — and tracks the evolution of identity representation from “I” to “We.” Lexical analysis, topic modeling (LDA), and semantic mapping (BERT + UMAP) reveal a transition from performance- and pleasure-centered discourse toward collective responsibility and sustainability. Hybrid ads combine ego and ethics, illustrating the car as both an extension of the self and a vehicle for social and ecological values. \nThe project demonstrates how data-driven media analysis can illuminate cultural and moral shifts in commercial narratives. \n#DataAnalysis #CulturalStudies #CriticalAnalytics #MediaStudies #Identity",
-    link: "", 
-    ready: false,
+    link: "docs/Parler de soi à travers la machine.pdf", 
+    ready: true,
+    lang: "fr",
   },
   "art-history-collab": {
     title: "Art History and Franco-American Collaborations",
