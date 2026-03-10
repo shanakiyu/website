@@ -43,8 +43,9 @@ const projectsData = {
   "art-history-collab": {
     title: "Art History and Franco-American Collaborations",
     desc: "Art History and Franco-American Collaborations investigates transatlantic scholarly connections in Art History through a dataset of faculty profiles from six U.S. universities. \nThe project harmonized heterogeneous data, extracted thematic and geographical markers using Regex and OpenAlex, and enriched them via LLM semantic analysis to generate detailed study tags. Network visualizations (GEXF, D3.js) illustrate collaborations between researchers and their domains, highlighting links with France. Interactive graphs distinguish Franco-American connections and map thematic affinities, showing which areas of Art History serve as bridges between the two academic scenes. This work demonstrates how structured data and semantic analysis can reveal patterns of knowledge exchange and cross-cultural academic collaboration. \n#ArtHistory #AcademicCollaboration #DataAnalysis #FrancoAmerican #SemanticAnalysis #NetworkVisualization",
-    link: "", 
-    ready: false,
+    link: "https://github.com/shanakiyu/ArtHistory", 
+    ready: true,
+    lang: "fr",
   },
   "crystals-minerals": {
     title: "Crystals and Minerals: From Kunstkammern to New Age",
